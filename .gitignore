@@ -1,0 +1,59 @@
+# === LabWindows/CVI build files ===
+*.obj
+*.pdb
+*.ilk
+*.exe
+*.dll
+*.lib
+*.manifest
+*.idb
+*.map
+*.pch
+*.bak
+
+# CVI intermediate build and debug folders
+/build/
+/dist/
+/output/
+/Debug/
+/Release/
+/bin/
+/obj/
+/cvi_build/
+
+# CVI specific generated files
+*.fp.bak
+*.prj.bak
+*.cws
+*.uih
+*.obj
+*.sub
+*.aliases
+*.cache
+*.tags
+
+# CVI autosave and backup
+*.bak
+*.tmp
+*.old
+*.suo
+*.user
+*.ncb
+
+# Configuration and environment
+*.ini
+*.cfg
+*.dat
+*.log
+
+
+# Generated measurement data or runtime results
+*.tdms
+*.csv
+*.dat
+
+
+# OS / Editor files
+.DS_Store
+Thumbs.db
+desktop.ini
