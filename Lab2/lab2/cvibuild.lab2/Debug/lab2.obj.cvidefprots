@@ -1,0 +1,40 @@
+[main]
+Class="Function"
+Prototype="int main(int argc, char *argv[]);"
+SourceLocation="c:\Users\loghi\Desktop\facultate\anul 3\sem 1\lab2\lab2\lab2.c:8:5"
+
+[OnMainPanel]
+Class="Function"
+Prototype="int OnMainPanel(int panel, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\Users\loghi\Desktop\facultate\anul 3\sem 1\lab2\lab2\lab2.c:23:17"
+
+[OnSwitch]
+Class="Function"
+Prototype="int OnSwitch(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\Users\loghi\Desktop\facultate\anul 3\sem 1\lab2\lab2\lab2.c:47:17"
+
+[ONAquisitionMode]
+Class="Function"
+Prototype="int ONAquisitionMode(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\Users\loghi\Desktop\facultate\anul 3\sem 1\lab2\lab2\lab2.c:86:17"
+
+[OnMenuBar]
+Class="Function"
+Prototype="void OnMenuBar(int menuBar, int menuItem, void *callbackData, int panel);"
+SourceLocation="c:\Users\loghi\Desktop\facultate\anul 3\sem 1\lab2\lab2\lab2.c:113:18"
+
+[OnNumericBox]
+Class="Function"
+Prototype="int OnNumericBox(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\Users\loghi\Desktop\facultate\anul 3\sem 1\lab2\lab2\lab2.c:148:17"
+
+[OnAquisitionSlide]
+Class="Function"
+Prototype="int OnAquisitionSlide(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\Users\loghi\Desktop\facultate\anul 3\sem 1\lab2\lab2\lab2.c:164:17"
+
+[OnColor]
+Class="Function"
+Prototype="int OnColor(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\Users\loghi\Desktop\facultate\anul 3\sem 1\lab2\lab2\lab2.c:178:17"
+
