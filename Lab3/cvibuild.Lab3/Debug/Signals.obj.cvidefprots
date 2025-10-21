@@ -1,0 +1,40 @@
+[ManualAcquisitionCB]
+Class="Function"
+Prototype="int ManualAcquisitionCB(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab3\Signals.c:52:17"
+
+[ManualDisplayCB]
+Class="Function"
+Prototype="int ManualDisplayCB(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab3\Signals.c:90:17"
+
+[SampleCB]
+Class="Function"
+Prototype="int SampleCB(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab3\Signals.c:143:17"
+
+[OnChooseColorCB]
+Class="Function"
+Prototype="int OnChooseColorCB(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab3\Signals.c:163:17"
+
+[FileIoCB]
+Class="Function"
+Prototype="int FileIoCB(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab3\Signals.c:201:17"
+
+[GraphDisplayCB]
+Class="Function"
+Prototype="int GraphDisplayCB(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab3\Signals.c:268:17"
+
+[AcquisitionTimerPeriodCB]
+Class="Function"
+Prototype="int AcquisitionTimerPeriodCB(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab3\Signals.c:289:17"
+
+[OnSimulationTimerCB]
+Class="Function"
+Prototype="int OnSimulationTimerCB(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab3\Signals.c:308:17"
+
