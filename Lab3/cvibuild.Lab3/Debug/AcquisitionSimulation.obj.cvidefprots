@@ -1,17 +1,17 @@
 [main]
 Class="Function"
 Prototype="int main(int argc, char *argv[]);"
-SourceLocation="c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab3\AcquisitionSimulation.c:67:5"
+SourceLocation="c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab3\AcquisitionSimulation.c:68:5"
 
 [MainPanelCB]
 Class="Function"
 Prototype="int MainPanelCB(int panel, int event, void *callbackData, int eventData1, int eventData2);"
-SourceLocation="c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab3\AcquisitionSimulation.c:117:17"
+SourceLocation="c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab3\AcquisitionSimulation.c:118:17"
 
 [OnMenuBar]
 Class="Function"
 Prototype="void OnMenuBar(int menuBar, int menuItem, void *callbackData, int panel);"
-SourceLocation="c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab3\AcquisitionSimulation.c:132:18"
+SourceLocation="c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab3\AcquisitionSimulation.c:133:18"
 
 [PowerSwitchCB]
 Class="Function"
@@ -22,4 +22,9 @@ SourceLocation="c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processi
 Class="Function"
 Prototype="int AcquisitionModeCB(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
 SourceLocation="c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab3\AcquisitionSimulation.c:252:17"
+
+[About_Panel_CB]
+Class="Function"
+Prototype="int About_Panel_CB(int panel, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab3\AcquisitionSimulation.c:328:17"
 

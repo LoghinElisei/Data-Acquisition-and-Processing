@@ -13,13 +13,11 @@
 
      /* Panels and Controls: */
 
-#define  AB_PANEL                         1       /* callback function: About_Panel_CB */
-
-#define  ABOUTPANEL                       2       /* callback function: OnAboutPanelCB */
+#define  ABOUTPANEL                       1       /* callback function: OnAboutPanelCB */
 #define  ABOUTPANEL_IDC_PICTURE           2       /* control type: picture, callback function: (none) */
 #define  ABOUTPANEL_IDC_TEXT_ABOUT        3       /* control type: textMsg, callback function: (none) */
 
-#define  MAIN_PANEL                       3       /* callback function: MainPanelCB */
+#define  MAIN_PANEL                       2       /* callback function: MainPanelCB */
 #define  MAIN_PANEL_IDC_GRAPH_DISPLAY     2       /* control type: graph, callback function: GraphDisplayCB */
 #define  MAIN_PANEL_IDC_SW_ACQMODE        3       /* control type: binary, callback function: AcquisitionModeCB */
 #define  MAIN_PANEL_IDC_SW_POWER          4       /* control type: binary, callback function: PowerSwitchCB */
@@ -74,7 +72,6 @@
 
      /* Callback Prototypes: */
 
-int  CVICALLBACK About_Panel_CB(int panel, int event, void *callbackData, int eventData1, int eventData2);
 int  CVICALLBACK AcquisitionModeCB(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
 int  CVICALLBACK AcquisitionTimerPeriodCB(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
 int  CVICALLBACK FileIoCB(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);

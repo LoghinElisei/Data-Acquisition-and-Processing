@@ -61,19 +61,19 @@ int CVICALLBACK ManualAcquisitionCB (int panel, int control, int event,
 			{
 				case SIGNALTYPE_SINEWAVE:
 					SineWave(GRAPH_NPOINTS,amplitude,frequency,&phase,rowSignal);
-
+				
 					break;
 				case SIGNALTYPE_SQUAREWAVE:
 					SquareWave(GRAPH_NPOINTS,amplitude/2,frequency,&phase,50,rowSignal);
-
+					
 					break;
 				case SIGNALTYPE_TRIANGLEWAVE:
 					TriangleWave(GRAPH_NPOINTS,amplitude,frequency,&phase,rowSignal);
-
+					
 					break;
 				default:
 					WhiteNoise(GRAPH_NPOINTS,amplitude,100,rowSignal);
-
+					
 					break;
 			}
 
@@ -113,19 +113,17 @@ int CVICALLBACK ManualDisplayCB (int panel, int control, int event,
 	switch (event)
 	{
 		case EVENT_COMMIT:
-
+		
 			MaxMin1D(rowSignal,GRAPH_NPOINTS,&maxVal,&maxIndex,&minVal,&minIndex);
-			if(plotHandle != NO_PLOT)
-			{
-				DeleteGraphPlot(panel,MAIN_PANEL,-1,VAL_DELAYED_DRAW);
-			}
+	if(plotHandle != NO_PLOT)
+	{DeleteGraphPlot(panel,MAIN_PANEL,-1,VAL_DELAYED_DRAW);}
 			plotHandle = PlotY(panel,MAIN_PANEL,rowSignal,GRAPH_NPOINTS,VAL_DOUBLE,VAL_THIN_LINE,VAL_NO_POINT,VAL_SOLID,1,VAL_RED);
-
+			
 			mean=(maxVal+minVal)/2.0;
 			SetCtrlVal(panel,MAIN_PANEL_IDC_NUM_MIN,minVal);
 			SetCtrlVal(panel,MAIN_PANEL_IDC_NUM_MEAN,mean);
 			SetCtrlVal(panel,MAIN_PANEL_IDC_NUM_MAX,maxVal);
-
+			
 			//To do: 08
 			//*********
 
@@ -168,8 +166,8 @@ int CVICALLBACK OnChooseColorCB (int panel, int control, int event,
 	switch (event)
 	{
 		case EVENT_COMMIT:
-
-
+			
+			
 			GetCtrlVal(panel,control,&val);
 			traceColor=val;
 			switch(control)
@@ -186,10 +184,10 @@ int CVICALLBACK OnChooseColorCB (int panel, int control, int event,
 					{
 						SetPlotAttribute(panel,MAIN_PANEL_IDC_GRAPH_DISPLAY,plotHandle,ATTR_TRACE_COLOR,val);
 					}
-					break;
+						break;
 			}
-
-
+			
+			
 			break;
 	}
 	return 0;
@@ -215,7 +213,7 @@ int CVICALLBACK FileIoCB (int panel, int control, int event,
 	int maxIndex = 0;
 	int minIndex = 0;
 	double mean = 0.0;
-
+	
 	switch (event)
 	{
 		case EVENT_COMMIT:
@@ -223,22 +221,22 @@ int CVICALLBACK FileIoCB (int panel, int control, int event,
 			switch( control )
 			{
 				case MAIN_PANEL_IDC_BTT_FILESAVE:
-
-
+					
+					
 					GetSystemDate(&month,&day,&year);
 					GetSystemTime(&hour,&minute,&second);
 					sprintf(path,"RowSignal_%4d.%2d.%2d_%2d-%2d-%2d.dat",year,month,day,hour,minute,second);
 					saveFlag = val;
 					SetCtrlAttribute(panel,MAIN_PANEL_IDC_BTT_FILELOAD,ATTR_DIMMED,val);
 					ArrayToFile(path,rowSignal,VAL_DOUBLE,GRAPH_NPOINTS,1,VAL_GROUPS_TOGETHER,VAL_GROUPS_AS_COLUMNS,VAL_SEP_BY_TAB,0,VAL_ASCII,VAL_TRUNCATE);
-
+					
 					break;
 
 				case MAIN_PANEL_IDC_BTT_FILELOAD:
 					if(FileSelectPopup("","",".dat","Please select one file",VAL_LOAD_BUTTON,0,0,1,0,path))
 					{
 						filestat = FileToArray(path,rowSignal,VAL_DOUBLE,GRAPH_NPOINTS,1,VAL_GROUPS_TOGETHER,VAL_GROUPS_AS_COLUMNS,VAL_ASCII);
-
+					
 						if(filestat == -1)
 						{
 							MessagePopup("Error","Couldn't open the selected file\n");
@@ -251,7 +249,7 @@ int CVICALLBACK FileIoCB (int panel, int control, int event,
 							SetCtrlVal(panel,MAIN_PANEL_IDC_NUM_MIN,minVal);
 							SetCtrlVal(panel,MAIN_PANEL_IDC_NUM_MEAN,mean);
 							SetCtrlVal(panel,MAIN_PANEL_IDC_NUM_MAX,maxVal);
-
+							
 						}
 					}
 
@@ -318,36 +316,34 @@ int CVICALLBACK OnSimulationTimerCB (int panel, int control, int event,
 	{
 		case EVENT_TIMER_TICK:
 			if(plotHandle != NO_PLOT)
-			{
-				DeleteGraphPlot(panel,MAIN_PANEL,-1,VAL_DELAYED_DRAW);
-			}
+			{DeleteGraphPlot(panel,MAIN_PANEL,-1,VAL_DELAYED_DRAW);}
 			switch(signalType)
 			{
 				case SIGNALTYPE_SINEWAVE:
 					SineWave(GRAPH_NPOINTS,amplitude,frequency,&phase,rowSignal);
-
+					
 					break;
 				case SIGNALTYPE_SQUAREWAVE:
 					SquareWave(GRAPH_NPOINTS,amplitude/2,frequency,&phase,50,rowSignal);
-
+					
 					break;
 				case SIGNALTYPE_TRIANGLEWAVE:
 					TriangleWave(GRAPH_NPOINTS,amplitude,frequency,&phase,rowSignal);
-
+					
 					break;
 				default:
 					WhiteNoise(GRAPH_NPOINTS,amplitude,100,rowSignal);
-
+					
 					break;
 			}
 			plotHandle = PlotY(panel,MAIN_PANEL,rowSignal,GRAPH_NPOINTS,VAL_DOUBLE,VAL_THIN_LINE,VAL_NO_POINT,VAL_SOLID,1,traceColor);
 
-
+			
 			MaxMin1D(rowSignal,GRAPH_NPOINTS,&maxVal,&maxIndex,&minVal,&minIndex);
 			SetCtrlVal(panel,MAIN_PANEL_IDC_NUM_MIN,minVal);
 			SetCtrlVal(panel,MAIN_PANEL_IDC_NUM_MEAN,mean);
 			SetCtrlVal(panel,MAIN_PANEL_IDC_NUM_MAX,maxVal);
-
+			
 			break;
 	}
 	return 0;
