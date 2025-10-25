@@ -1,0 +1,30 @@
+[main]
+Class="Function"
+Prototype="int main(int argc, char *argv[]);"
+SourceLocation="c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab4\ApdL04-TemaPropusa\SerialECG.c:50:5"
+
+[MainPanelCB]
+Class="Function"
+Prototype="int MainPanelCB(int panel, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab4\ApdL04-TemaPropusa\SerialECG.c:93:17"
+
+[OnAboutPanelCB]
+Class="Function"
+Prototype="int OnAboutPanelCB(int panel, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab4\ApdL04-TemaPropusa\SerialECG.c:104:17"
+
+[OnComPanelCB]
+Class="Function"
+Prototype="int OnComPanelCB(int panel, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab4\ApdL04-TemaPropusa\SerialECG.c:125:17"
+
+[OnMainMenubarCB]
+Class="Function"
+Prototype="void OnMainMenubarCB(int menuBar, int menuItem, void *callbackData, int panel);"
+SourceLocation="c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab4\ApdL04-TemaPropusa\SerialECG.c:148:18"
+
+[OnButtonSend]
+Class="Function"
+Prototype="int OnButtonSend(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab4\ApdL04-TemaPropusa\SerialECG.c:184:17"
+
