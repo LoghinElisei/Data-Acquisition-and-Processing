@@ -23,8 +23,3 @@ Class="Function"
 Prototype="int AcquisitionModeCB(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
 SourceLocation="c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab3\AcquisitionSimulation.c:252:17"
 
-[About_Panel_CB]
-Class="Function"
-Prototype="int About_Panel_CB(int panel, int event, void *callbackData, int eventData1, int eventData2);"
-SourceLocation="c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab3\AcquisitionSimulation.c:328:17"
-

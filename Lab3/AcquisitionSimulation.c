@@ -27,7 +27,7 @@
 //==============================================================================
 // Static global variables
 static int mainPanel = 0;
-//static int aboutPanel = 1;
+static int aboutPanel = 0;
 //numarul de controale ce trebuiesc validate/invalidate
 static const int nControls = 9;
 //controalele ce sunt validate/invalidate sunt puse intr-un vector
@@ -83,7 +83,7 @@ int main (int argc, char *argv[])
 	SetAxisScalingMode( mainPanel, MAIN_PANEL_IDC_GRAPH_DISPLAY, VAL_BOTTOM_XAXIS, VAL_MANUAL, 0.0, GRAPH_NPOINTS );
 	//To do: 10
 	//*********
-	/*errChk (aboutPanel = LoadPanel (0, "AcquisitionSimulation.uir",AB_PANEL));*/
+	/*errChk (aboutPanel = LoadPanel (mainPanel, "AcquisitionSimulation.uir",AB_PANEL));*/
 
 	/* display the panel and run the user interface */
 	errChk (DisplayPanel (mainPanel));
@@ -190,7 +190,7 @@ void CVICALLBACK OnMenuBar (int menuBar, int menuItem, void *callbackData, int p
 			break;
 
 		case MENUBAR_ABOUT_ABOUT:
-			/*InstallPopup(aboutPanel);*/
+			InstallPopup(aboutPanel);
 
 			break;
 	}
@@ -325,20 +325,23 @@ static int CheckMenuItem(int menuBar, int menuItem )
 }
 
 
-int CVICALLBACK About_Panel_CB (int panel, int event, void *callbackData,
-								int eventData1, int eventData2)
-{
-	switch (event)
-	{
-		case EVENT_GOT_FOCUS:
 
-			break;
-		case EVENT_LOST_FOCUS:
 
-			break;
-		case EVENT_CLOSE:
-			/*RemovePopup(aboutPanel);*/
-			break;
-	}
-	return 0;
-}
+//int CVICALLBACK AB_PANEL_CB (int panel, int event, void *callbackData,
+//							 int eventData1, int eventData2)
+//{
+//	switch (event)
+//	{
+//		case EVENT_GOT_FOCUS:
+
+//			break;
+//		case EVENT_LOST_FOCUS:
+
+//			break;
+//		case EVENT_CLOSE:
+//		QueueUserEvent(MY_EVENT_CLOSE2,panel,AB_PANEL);
+//		RemovePopup(aboutPanel);
+//			break;
+//	}
+//	return 0;
+//}

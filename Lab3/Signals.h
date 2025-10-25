@@ -31,7 +31,7 @@
 #define SIGNALTYPE_NOISE				4
 #define MY_USER_EVENT 1000
 #define MY_EVENT_CLOSE 1001
-		
+#define MY_EVENT_CLOSE2 1002
 #define NO_PLOT							-1	
 		
 #define GRAPH_NPOINTS 					500 /*numarul de puncte de pe graph, semnal*/
