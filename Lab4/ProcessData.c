@@ -54,9 +54,9 @@ static automateState = AUTOMAT_PACK_START;
 int CVICALLBACK PlayHeartSound(void *data)
 {
 
-	Beep(1200, 300);
-	Sleep(60);
-	Beep(1000, 200); 
+	Beep(1000, 500);
+	Sleep(20);
+	Beep(800, 300); 
 
 	return 0;
 }
@@ -111,11 +111,19 @@ int ProcessComInBuffer( char *comBuffer, int comBufferLenght )
 					i+=2;
 
 
+
+
+
+					PlotStripChartPoint( mainPanel, MAIN_PANEL_IDC_DISP_ECG1, iCh0 );
+					PlotStripChartPoint( mainPanel, MAIN_PANEL_IDC_DISP_ECG2, iCh1 );
+					PlotStripChartPoint( mainPanel, MAIN_PANEL_IDC_DISP_ECG3, iCh2 );
+					
+					
 					if(iCh0 > THRESHOLD )
 					{
 						if(!heartbeatPlaying)
 						{
-
+							
 							CmtScheduleThreadPoolFunction(DEFAULT_THREAD_POOL_HANDLE,PlayHeartSound,NULL,NULL);
 							heartbeatPlaying =1;
 						}
@@ -130,15 +138,9 @@ int ProcessComInBuffer( char *comBuffer, int comBufferLenght )
 					}
 
 
-
-
-					PlotStripChartPoint( mainPanel, MAIN_PANEL_IDC_DISP_ECG1, iCh0 );
-					PlotStripChartPoint( mainPanel, MAIN_PANEL_IDC_DISP_ECG2, iCh1 );
-					PlotStripChartPoint( mainPanel, MAIN_PANEL_IDC_DISP_ECG3, iCh2 );
-
 				}
 
-
+				
 		}
 	}
 

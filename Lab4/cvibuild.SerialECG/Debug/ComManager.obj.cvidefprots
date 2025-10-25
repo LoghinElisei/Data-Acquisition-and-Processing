@@ -1,15 +1,15 @@
 [DisplayComSettingsPanel]
 Class="Function"
 Prototype="int DisplayComSettingsPanel();"
-SourceLocation="c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab4\ApdL04-TemaPropusa\ComManager.c:51:5"
+SourceLocation="c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab4\ComManager.c:51:5"
 
 [OpenCloseComInPort]
 Class="Function"
 Prototype="int OpenCloseComInPort();"
-SourceLocation="c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab4\ApdL04-TemaPropusa\ComManager.c:73:6"
+SourceLocation="c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab4\ComManager.c:73:6"
 
 [ComInCallback]
 Class="Function"
 Prototype="void ComInCallback(int portNumber, int eventMask, void *callbackData);"
-SourceLocation="c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab4\ApdL04-TemaPropusa\ComManager.c:145:18"
+SourceLocation="c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab4\ComManager.c:145:18"
 

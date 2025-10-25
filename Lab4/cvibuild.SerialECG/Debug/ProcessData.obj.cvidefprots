@@ -1,10 +1,10 @@
 [PlayHeartSound]
 Class="Function"
 Prototype="int PlayHeartSound(void *data);"
-SourceLocation="c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab4\ApdL04-TemaPropusa\ProcessData.c:54:17"
+SourceLocation="c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab4\ProcessData.c:54:17"
 
 [ProcessComInBuffer]
 Class="Function"
 Prototype="int ProcessComInBuffer(char *comBuffer, int comBufferLenght);"
-SourceLocation="c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab4\ApdL04-TemaPropusa\ProcessData.c:64:5"
+SourceLocation="c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab4\ProcessData.c:64:5"
 

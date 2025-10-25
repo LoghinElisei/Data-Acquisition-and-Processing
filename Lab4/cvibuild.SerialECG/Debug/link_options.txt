@@ -1,22 +1,22 @@
 -nologo
--out:c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab4\ApdL04-TemaPropusa\cvibuild.SerialECG\Debug\SerialECG.exe
+-out:c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab4\cvibuild.SerialECG\Debug\SerialECG.exe
 -arch:x86
 -timestamp
 -debug:2
 -loadextmod
--project:c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab4\ApdL04-TemaPropusa\SerialECG.prj
--res:c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab4\ApdL04-TemaPropusa\cvibuild.SerialECG\Debug\resources.res
+-project:c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab4\SerialECG.prj
+-res:c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab4\cvibuild.SerialECG\Debug\resources.res
 -entry:_CVIWinMainStartupCodeForDebugging@0
 -base:0x400000
--linked:c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab4\ApdL04-TemaPropusa\cvibuild.SerialECG\Debug\linkersummary.txt
--dlldeps:c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab4\ApdL04-TemaPropusa\cvibuild.SerialECG\Debug\dlldependencies.txt
--licensing:c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab4\ApdL04-TemaPropusa\cvibuild.SerialECG\Debug\linkerlicensing.txt
--browsedeps:c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab4\ApdL04-TemaPropusa\cvibuild.SerialECG\Debug\moduledependencies.txt
+-linked:c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab4\cvibuild.SerialECG\Debug\linkersummary.txt
+-dlldeps:c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab4\cvibuild.SerialECG\Debug\dlldependencies.txt
+-licensing:c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab4\cvibuild.SerialECG\Debug\linkerlicensing.txt
+-browsedeps:c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab4\cvibuild.SerialECG\Debug\moduledependencies.txt
 -stackreserve:1048576
 -stackcommit:4096
--in:c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab4\ApdL04-TemaPropusa\cvibuild.SerialECG\Debug\ComManager.obj
--in:c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab4\ApdL04-TemaPropusa\cvibuild.SerialECG\Debug\ProcessData.obj
--in:c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab4\ApdL04-TemaPropusa\cvibuild.SerialECG\Debug\SerialECG.obj
+-in:c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab4\cvibuild.SerialECG\Debug\ComManager.obj
+-in:c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab4\cvibuild.SerialECG\Debug\ProcessData.obj
+-in:c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab4\cvibuild.SerialECG\Debug\SerialECG.obj
 -more:c:\program files (x86)\national instruments\cvi2020\bin\msvc\cvistart.lib
 -more:c:\program files (x86)\national instruments\cvi2020\bin\msvc\cvi.lib
 -more:c:\Program Files (x86)\National Instruments\CVI2020\bin\msvc\advanlys.lib
