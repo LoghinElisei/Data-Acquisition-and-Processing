@@ -1,0 +1,55 @@
+[sos_filter]
+Class="Function"
+Prototype="void sos_filter(const double *x, double *y, int n);"
+SourceLocation="e:\APD_old_labs\[old]__APD_L04 - Serial communication-20200925\ApdL04-TemaPropusa\TestPT.c:23:6"
+
+[reset_filter_states]
+Class="Function"
+Prototype="void reset_filter_states();"
+SourceLocation="e:\APD_old_labs\[old]__APD_L04 - Serial communication-20200925\ApdL04-TemaPropusa\TestPT.c:54:6"
+
+[derivative]
+Class="Function"
+Prototype="void derivative(const double *x, double *y, int n, double fs);"
+SourceLocation="e:\APD_old_labs\[old]__APD_L04 - Serial communication-20200925\ApdL04-TemaPropusa\TestPT.c:64:6"
+
+[squaring]
+Class="Function"
+Prototype="void squaring(const double *x, double *y, int n);"
+SourceLocation="e:\APD_old_labs\[old]__APD_L04 - Serial communication-20200925\ApdL04-TemaPropusa\TestPT.c:72:6"
+
+[moving_average]
+Class="Function"
+Prototype="void moving_average(const double *x, double *y, int n, int win);"
+SourceLocation="e:\APD_old_labs\[old]__APD_L04 - Serial communication-20200925\ApdL04-TemaPropusa\TestPT.c:79:6"
+
+[find_peaks]
+Class="Function"
+Prototype="int find_peaks(const double *x, int n, int min_dist, double thr, double *pks, int *locs);"
+SourceLocation="e:\APD_old_labs\[old]__APD_L04 - Serial communication-20200925\ApdL04-TemaPropusa\TestPT.c:95:5"
+
+[find_r_peaks_from_qrs]
+Class="Function"
+Prototype="int find_r_peaks_from_qrs(const double *original_ecg, const int *qrs_locations, int num_qrs, int search_window, double *r_amplitudes, int *r_locations);"
+SourceLocation="e:\APD_old_labs\[old]__APD_L04 - Serial communication-20200925\ApdL04-TemaPropusa\TestPT.c:112:5"
+
+[calculate_heart_rate]
+Class="Function"
+Prototype="double calculate_heart_rate(const int *r_locations, int num_peaks, double fs);"
+SourceLocation="e:\APD_old_labs\[old]__APD_L04 - Serial communication-20200925\ApdL04-TemaPropusa\TestPT.c:149:8"
+
+[EnhancedPamTomkins]
+Class="Function"
+Prototype="int EnhancedPamTomkins(double ecg[300], int n, double fs, double *r_peaks, int *r_locations, double *heart_rate);"
+SourceLocation="e:\APD_old_labs\[old]__APD_L04 - Serial communication-20200925\ApdL04-TemaPropusa\TestPT.c:175:5"
+
+[PamTomkins]
+Class="Function"
+Prototype="int PamTomkins(double ecg[300], int n, double fs, double *peaks, int *locs);"
+SourceLocation="e:\APD_old_labs\[old]__APD_L04 - Serial communication-20200925\ApdL04-TemaPropusa\TestPT.c:214:5"
+
+[get_qrs_information]
+Class="Function"
+Prototype="void get_qrs_information(double ecg[300], int n, double fs, int *qrs_count, int *qrs_locations, double *qrs_amplitudes);"
+SourceLocation="e:\APD_old_labs\[old]__APD_L04 - Serial communication-20200925\ApdL04-TemaPropusa\TestPT.c:246:6"
+

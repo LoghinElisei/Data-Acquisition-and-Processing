@@ -1,0 +1,65 @@
+[FiltruQRS]
+Class="Function"
+Prototype="int FiltruQRS(int xdata, int init);"
+SourceLocation="e:\APD_old_labs\[old]__APD_L04 - Serial communication-20200925\ApdL04-TemaPropusa\ProcessECG.c:66:5"
+
+[ftj]
+Class="Function"
+Prototype="int ftj(int xdata, int init);"
+SourceLocation="e:\APD_old_labs\[old]__APD_L04 - Serial communication-20200925\ApdL04-TemaPropusa\ProcessECG.c:90:5"
+
+[ftj1]
+Class="Function"
+Prototype="int ftj1(int xdata, int init);"
+SourceLocation="e:\APD_old_labs\[old]__APD_L04 - Serial communication-20200925\ApdL04-TemaPropusa\ProcessECG.c:118:5"
+
+[fts]
+Class="Function"
+Prototype="int fts(int xdata, int init);"
+SourceLocation="e:\APD_old_labs\[old]__APD_L04 - Serial communication-20200925\ApdL04-TemaPropusa\ProcessECG.c:145:5"
+
+[deriv1]
+Class="Function"
+Prototype="int deriv1(int x, int init);"
+SourceLocation="e:\APD_old_labs\[old]__APD_L04 - Serial communication-20200925\ApdL04-TemaPropusa\ProcessECG.c:173:5"
+
+[deriv2]
+Class="Function"
+Prototype="int deriv2(int x, int init);"
+SourceLocation="e:\APD_old_labs\[old]__APD_L04 - Serial communication-20200925\ApdL04-TemaPropusa\ProcessECG.c:193:5"
+
+[mvwint]
+Class="Function"
+Prototype="int mvwint(int xdata, int init);"
+SourceLocation="e:\APD_old_labs\[old]__APD_L04 - Serial communication-20200925\ApdL04-TemaPropusa\ProcessECG.c:214:5"
+
+[FindQRS]
+Class="Function"
+Prototype="int FindQRS(int xdata, int init);"
+SourceLocation="e:\APD_old_labs\[old]__APD_L04 - Serial communication-20200925\ApdL04-TemaPropusa\ProcessECG.c:239:5"
+
+[Peak]
+Class="Function"
+Prototype="int Peak(int xdata, int init);"
+SourceLocation="e:\APD_old_labs\[old]__APD_L04 - Serial communication-20200925\ApdL04-TemaPropusa\ProcessECG.c:426:5"
+
+[mean]
+Class="Function"
+Prototype="int mean(int *array, int datnum);"
+SourceLocation="e:\APD_old_labs\[old]__APD_L04 - Serial communication-20200925\ApdL04-TemaPropusa\ProcessECG.c:463:5"
+
+[thresh]
+Class="Function"
+Prototype="int thresh(int qmean, int nmean);"
+SourceLocation="e:\APD_old_labs\[old]__APD_L04 - Serial communication-20200925\ApdL04-TemaPropusa\ProcessECG.c:475:5"
+
+[BLSCheck]
+Class="Function"
+Prototype="int BLSCheck(int *dBuf, int dbPtr, int *maxder);"
+SourceLocation="e:\APD_old_labs\[old]__APD_L04 - Serial communication-20200925\ApdL04-TemaPropusa\ProcessECG.c:488:5"
+
+[ProcessECG]
+Class="Function"
+Prototype="int *ProcessECG(int sample12, int init);"
+SourceLocation="e:\APD_old_labs\[old]__APD_L04 - Serial communication-20200925\ApdL04-TemaPropusa\ProcessECG.c:524:6"
+

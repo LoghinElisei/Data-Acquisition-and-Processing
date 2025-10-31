@@ -1,0 +1,5 @@
+[ProcessComInBuffer]
+Class="Function"
+Prototype="int ProcessComInBuffer(char *comBuffer, int comBufferLength);"
+SourceLocation="c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab5\ProcessData.c:56:5"
+

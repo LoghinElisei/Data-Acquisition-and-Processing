@@ -1,0 +1,55 @@
+[real_time_ecg_init]
+Class="Function"
+Prototype="void real_time_ecg_init();"
+SourceLocation="c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab5\RealTimeECGProcess.c:60:6"
+
+[real_time_bandpass_filter]
+Class="Function"
+Prototype="double real_time_bandpass_filter(double input);"
+SourceLocation="c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab5\RealTimeECGProcess.c:122:8"
+
+[real_time_derivative]
+Class="Function"
+Prototype="double real_time_derivative(double input, int ecg_sample_counter);"
+SourceLocation="c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab5\RealTimeECGProcess.c:152:8"
+
+[real_time_moving_average]
+Class="Function"
+Prototype="double real_time_moving_average(double input, int ecg_sample_counter);"
+SourceLocation="c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab5\RealTimeECGProcess.c:183:8"
+
+[real_time_peak_detection]
+Class="Function"
+Prototype="double real_time_peak_detection(double processed_signal, double bandpass_signal, double original_ecg, int ecg_sample_counter);"
+SourceLocation="c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab5\RealTimeECGProcess.c:213:8"
+
+[process_ecg_sample]
+Class="Function"
+Prototype="void process_ecg_sample(double ecg_sample, double *heart_rate);"
+SourceLocation="c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab5\RealTimeECGProcess.c:396:6"
+
+[get_ecg_results]
+Class="Function"
+Prototype="void get_ecg_results(double *heart_rate, int *peak_count, double *last_r_peak, int *last_r_location);"
+SourceLocation="c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab5\RealTimeECGProcess.c:423:6"
+
+[get_average_heart_rate]
+Class="Function"
+Prototype="double get_average_heart_rate();"
+SourceLocation="c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab5\RealTimeECGProcess.c:447:8"
+
+[get_peak_count]
+Class="Function"
+Prototype="int get_peak_count();"
+SourceLocation="c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab5\RealTimeECGProcess.c:469:5"
+
+[get_peak_detected]
+Class="Function"
+Prototype="int get_peak_detected();"
+SourceLocation="c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab5\RealTimeECGProcess.c:475:5"
+
+[reset_real_time_ecg]
+Class="Function"
+Prototype="void reset_real_time_ecg();"
+SourceLocation="c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab5\RealTimeECGProcess.c:481:6"
+
