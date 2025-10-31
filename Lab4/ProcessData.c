@@ -55,8 +55,8 @@ int CVICALLBACK PlayHeartSound(void *data)
 {
 
 	Beep(1000, 500);
-	Sleep(20);
-	Beep(800, 300); 
+	//Sleep(7000);
+	//Beep(800, 300); 
 
 	return 0;
 }
@@ -111,13 +111,11 @@ int ProcessComInBuffer( char *comBuffer, int comBufferLenght )
 					i+=2;
 
 
-
+	
+					
 
 
 					PlotStripChartPoint( mainPanel, MAIN_PANEL_IDC_DISP_ECG1, iCh0 );
-					PlotStripChartPoint( mainPanel, MAIN_PANEL_IDC_DISP_ECG2, iCh1 );
-					PlotStripChartPoint( mainPanel, MAIN_PANEL_IDC_DISP_ECG3, iCh2 );
-					
 					
 					if(iCh0 > THRESHOLD )
 					{
@@ -136,6 +134,12 @@ int ProcessComInBuffer( char *comBuffer, int comBufferLenght )
 							heartbeatPlaying =0;
 						}
 					}
+					
+					
+					PlotStripChartPoint( mainPanel, MAIN_PANEL_IDC_DISP_ECG2, iCh1 );
+					PlotStripChartPoint( mainPanel, MAIN_PANEL_IDC_DISP_ECG3, iCh2 );
+					
+				
 
 
 				}
