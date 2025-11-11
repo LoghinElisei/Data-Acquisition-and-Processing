@@ -1,0 +1,25 @@
+[main]
+Class="Function"
+Prototype="int main(int argc, char *argv[]);"
+SourceLocation="c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab6\OUT\Do.c:14:5"
+
+[OnDoPanelCB]
+Class="Function"
+Prototype="int OnDoPanelCB(int panel, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab6\OUT\Do.c:29:17"
+
+[OnDoButtonWrite]
+Class="Function"
+Prototype="int OnDoButtonWrite(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab6\OUT\Do.c:47:17"
+
+[OnDoLed]
+Class="Function"
+Prototype="int OnDoLed(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab6\OUT\Do.c:77:17"
+
+[OnDoButtonStart]
+Class="Function"
+Prototype="int OnDoButtonStart(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab6\OUT\Do.c:89:17"
+
