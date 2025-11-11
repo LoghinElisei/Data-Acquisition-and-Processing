@@ -1,0 +1,1 @@
+-force-include-file "Di.c";"c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab6\IN\Di.c" -force-include-file "Di.h";"c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab6\IN\Di.h" 

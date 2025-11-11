@@ -1,0 +1,25 @@
+[main]
+Class="Function"
+Prototype="int main(int argc, char *argv[]);"
+SourceLocation="c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab6\Di.c:8:5"
+
+[OnDiPanelCB]
+Class="Function"
+Prototype="int OnDiPanelCB(int panel, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab6\Di.c:23:17"
+
+[OnDiButtonRead]
+Class="Function"
+Prototype="int OnDiButtonRead(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab6\Di.c:41:17"
+
+[OnDiButtonStart]
+Class="Function"
+Prototype="int OnDiButtonStart(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab6\Di.c:53:17"
+
+[OnDiKeyTimer]
+Class="Function"
+Prototype="int OnDiKeyTimer(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab6\Di.c:64:17"
+
