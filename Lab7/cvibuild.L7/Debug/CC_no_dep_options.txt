@@ -1,0 +1,1 @@
+-force-include-file "Aquisition.c";"c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab7\Aquisition.c" 

@@ -1,0 +1,40 @@
+[DAQmxErrChk]
+Class="Function"
+Prototype="int DAQmxErrChk(int errCode);"
+SourceLocation="c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab7\Aquisition.c:14:5"
+
+[main]
+Class="Function"
+Prototype="int main(int argc, char *argv[]);"
+SourceLocation="c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab7\Aquisition.c:28:5"
+
+[MainPanelCB]
+Class="Function"
+Prototype="int MainPanelCB(int panel, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab7\Aquisition.c:42:17"
+
+[OnRange]
+Class="Function"
+Prototype="int OnRange(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab7\Aquisition.c:60:17"
+
+[QuitCallback]
+Class="Function"
+Prototype="int QuitCallback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab7\Aquisition.c:81:17"
+
+[EveryNCallback]
+Class="Function"
+Prototype="long EveryNCallback(void *taskHandle, long everyNsamplesEventType, unsigned long nSamples, void *callbackData);"
+SourceLocation="c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab7\Aquisition.c:94:19"
+
+[DoneCallback]
+Class="Function"
+Prototype="long DoneCallback(void *taskHandle, long status, void *callbackData);"
+SourceLocation="c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab7\Aquisition.c:102:19"
+
+[OnStartStopButton]
+Class="Function"
+Prototype="int OnStartStopButton(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab7\Aquisition.c:109:17"
+
