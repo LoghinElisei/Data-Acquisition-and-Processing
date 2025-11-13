@@ -30,9 +30,12 @@ int main (int argc, char *argv[])
 int DAQmxErrChk(int errCode)
 {
 	char errBuff[2048] = {'\0'};
-	/*if(DAQmxGetExtendedErrorInfo(errBuff,2048) == 0)
+	if(errCode < 0)
+	{
+		if(DAQmxGetExtendedErrorInfo(errBuff,2047) == 0)
 		MessagePopup("Error",errBuff);
-	*/
+	}
+	
 	return errCode;
 }
 
@@ -68,11 +71,11 @@ int CVICALLBACK OnDiButtonRead (int panel, int control, int event, void *callbac
 			{
 				return -1;
 			}
-			SetCtrlVal(diPanel,DI_PANEL_IDC_KEY_LED_0,(portValue & 0x01));
-			SetCtrlVal(diPanel,DI_PANEL_IDC_KEY_LED_1,(portValue & 0x02) >> 1);
-			SetCtrlVal(diPanel,DI_PANEL_IDC_KEY_LED_2, (portValue & 0x04) >> 2);
-			SetCtrlVal(diPanel,DI_PANEL_IDC_KEY_LED_3,(portValue & 0x08) >>3);
-			SetCtrlVal(diPanel,DI_PANEL_IDC_DI_VALUE,portValue);
+			SetCtrlVal(diPanel,DI_PANEL_IDC_KEY_LED_0,!(portValue & 0x01));
+			SetCtrlVal(diPanel,DI_PANEL_IDC_KEY_LED_1,!(portValue & 0x02) >> 1);
+			SetCtrlVal(diPanel,DI_PANEL_IDC_KEY_LED_2, !(portValue & 0x04) >> 2);
+			SetCtrlVal(diPanel,DI_PANEL_IDC_KEY_LED_3,!(portValue & 0x08) >>3);
+			SetCtrlVal(diPanel,DI_PANEL_IDC_DI_VALUE,!portValue);
 			break;
 	}
 	return 0;
@@ -148,11 +151,11 @@ int CVICALLBACK OnDiKeyTimer (int panel, int control, int event, void *callbackD
 			{
 				return -1;
 			}
-			SetCtrlVal(diPanel,DI_PANEL_IDC_KEY_LED_0,(portValue & 0x01));
-			SetCtrlVal(diPanel,DI_PANEL_IDC_KEY_LED_1,(portValue & 0x02) >> 1);
-			SetCtrlVal(diPanel,DI_PANEL_IDC_KEY_LED_2, (portValue & 0x04) >> 2);
-			SetCtrlVal(diPanel,DI_PANEL_IDC_KEY_LED_3,(portValue & 0x08) >>3);
-			SetCtrlVal(diPanel,DI_PANEL_IDC_DI_VALUE,portValue);
+			SetCtrlVal(diPanel,DI_PANEL_IDC_KEY_LED_0,!(portValue & 0x01));
+			SetCtrlVal(diPanel,DI_PANEL_IDC_KEY_LED_1,!((portValue & 0x02) >> 1));
+			SetCtrlVal(diPanel,DI_PANEL_IDC_KEY_LED_2, !((portValue & 0x04) >> 2));
+			SetCtrlVal(diPanel,DI_PANEL_IDC_KEY_LED_3,!((portValue & 0x08) >>3));
+			SetCtrlVal(diPanel,DI_PANEL_IDC_DI_VALUE,~portValue & 0x0F);
 			
 			break;
 	}

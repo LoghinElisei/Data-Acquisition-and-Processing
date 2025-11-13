@@ -66,7 +66,7 @@ int CVICALLBACK OnDoButtonWrite (int panel, int control, int event,
 			SetCtrlVal(doPanel,DO_PANEL_IDC_LED_6,(portValue & 0x40) >>6);
 			SetCtrlVal(doPanel,DO_PANEL_IDC_LED_7,(portValue & 0x80) >>7);
 			
-			
+			val=(~val);
 			DAQmxWriteDigitalU8(doTask,1,1,10,DAQmx_Val_GroupByChannel,&val,&sampsPerChanWritten,NULL);
 			
 			break;
