@@ -1,0 +1,25 @@
+[main]
+Class="Function"
+Prototype="int main(int argc, char *argv[]);"
+SourceLocation="c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab8\AiMultiChannel.c:49:5"
+
+[MainPanelCB]
+Class="Function"
+Prototype="int MainPanelCB(int panel, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab8\AiMultiChannel.c:74:17"
+
+[OnStartAi]
+Class="Function"
+Prototype="int OnStartAi(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab8\AiMultiChannel.c:83:17"
+
+[EveryNSamples]
+Class="Function"
+Prototype="long EveryNSamples(void *taskHandle, long everyNsamplesEventType, unsigned long nSamples, void *callbackData);"
+SourceLocation="c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab8\AiMultiChannel.c:142:19"
+
+[DoneCallback]
+Class="Function"
+Prototype="long DoneCallback(void *taskHandle, long status, void *callbackData);"
+SourceLocation="c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab8\AiMultiChannel.c:175:19"
+
