@@ -1,0 +1,35 @@
+[DAQmxErrChk]
+Class="Function"
+Prototype="int DAQmxErrChk(int errCode);"
+SourceLocation="c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab9\AnalogOut.c:22:5"
+
+[main]
+Class="Function"
+Prototype="int main(int argc, char *argv[]);"
+SourceLocation="c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab9\AnalogOut.c:35:5"
+
+[MainPanelCB]
+Class="Function"
+Prototype="int MainPanelCB(int panel, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab9\AnalogOut.c:50:17"
+
+[DoneCallback]
+Class="Function"
+Prototype="long DoneCallback(void *taskHandle, long status, void *callbackData);"
+SourceLocation="c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab9\AnalogOut.c:74:19"
+
+[RangeCallback]
+Class="Function"
+Prototype="int RangeCallback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab9\AnalogOut.c:80:17"
+
+[OnGenTimer]
+Class="Function"
+Prototype="int OnGenTimer(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab9\AnalogOut.c:92:17"
+
+[StartCallback]
+Class="Function"
+Prototype="int StartCallback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab9\AnalogOut.c:135:17"
+
