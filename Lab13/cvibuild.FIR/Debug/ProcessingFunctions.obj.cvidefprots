@@ -1,0 +1,20 @@
+[FilterNone]
+Class="Function"
+Prototype="int FilterNone(double inputArray[], unsigned int numberOfElements, double outputArray[]);"
+SourceLocation="c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab13\ProcessingFunctions.c:19:5"
+
+[FilterAlpha]
+Class="Function"
+Prototype="int FilterAlpha(double inputArray[], unsigned int numberOfElements, double alpha, double outputArray[]);"
+SourceLocation="c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab13\ProcessingFunctions.c:32:5"
+
+[FilterMovingAverage]
+Class="Function"
+Prototype="int FilterMovingAverage(double inputArray[], unsigned int numberOfElements, unsigned int filterNumberOfElements, double outputArray[]);"
+SourceLocation="c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab13\ProcessingFunctions.c:45:5"
+
+[ComputePowerSpectrum]
+Class="Function"
+Prototype="int ComputePowerSpectrum(double inputArray[], unsigned int numberOfElements, double samplingRate, double convertedSpectrum[], double *frequencyInterval, double *powerPeak, double *freqPeak);"
+SourceLocation="c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab13\ProcessingFunctions.c:68:5"
+
