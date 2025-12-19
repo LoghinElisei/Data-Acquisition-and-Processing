@@ -244,24 +244,29 @@ int32 CVICALLBACK EveryNCallback(TaskHandle taskHandle,int32 everyNsamplesEventT
 			FilterMovingAverage(rawSignal, numRead, avgWndLen, filteredSignal);
 			break;
 		case FILTER_SAVITZKY:
-
+			SavitzkyGolayFiltering(rawSignal,numRead,filterOrder,ncoef,NULL,filteredSignal);
 			break;
 		case FILTER_EQUIRPL:
 			switch(filterBandType)
 			{
+				//trece jos
 				case FILTER_LPF:
-
+					EquiRpl_LPF(samplingRate,f3,f2,ncoef,coefficientArray,&delta);
 					break;
+				//trece banda
 				case FILTER_BPF:
-
+					EquiRpl_BPF(samplingRate,f1,f2,f3,f4,ncoef,coefficientArray,&delta);
 					break;
+				//opreste banda
 				case FILTER_BSF:
-
+					EquiRpl_BSF(samplingRate,f1,f2,f3,f4,ncoef,coefficientArray,&delta);
 					break;
+				//trece sus
 				case FILTER_HPF:
-
+					EquiRpl_HPF(samplingRate,f2,f3,ncoef,coefficientArray,&delta);
 					break;
 			}
+			Convolve(coefficientArray,ncoef,rawSignal,numRead,filteredSignal);
 			break;
 	}
 		//sterg graph-ul pe care urmeaza sa plotez semnalul filtrat
