@@ -1,0 +1,11 @@
+AiDSP2.obj
+cvi.lib
+advanlys.lib
+daqmxioctrl.lib
+NIDAQmx.lib
+cvistart.lib
+kernel32.lib
+user32.lib
+EXE Symbol Module
+Exports Module
+Resource Module

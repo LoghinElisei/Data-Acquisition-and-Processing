@@ -1,0 +1,1 @@
+-force-include-file "AiDSP2.c";"c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab12\AiDSP2.c" -force-include-file "AiDSP2.h";"c:\Users\loghi\Desktop\GIT PROJECT\Data Acquisition and Processing\Lab12\AiDSP2.h" 
